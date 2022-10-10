@@ -8,3 +8,16 @@ sum=0
 for a in ls[i:j+1]:
     sum=sum+int(a)
 print(sum)
+
+4:
+list1=[10,15,20,25,30,35,40]
+list2=[25,40,35]
+list3=list(set(list1)-set(list2))
+print(list3)
+
+5:
+ip=input("enter the values")
+lst=ip.split()
+for i in lst[:]:
+    if int(i)>int(0):
+        print((i))
