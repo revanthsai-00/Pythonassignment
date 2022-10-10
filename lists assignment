@@ -1,0 +1,10 @@
+List questions:
+1:
+i=int(input("enter the value of a:"))
+j=int(input("enter the value of b:"))
+lst=input("enter values:")
+ls=lst.split()
+sum=0
+for a in ls[i:j+1]:
+    sum=sum+int(a)
+print(sum)
