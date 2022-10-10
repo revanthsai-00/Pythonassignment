@@ -8,7 +8,16 @@ sum=0
 for a in ls[i:j+1]:
     sum=sum+int(a)
 print(sum)
-
+3:
+from collections import Counter
+inp=['aaa','bbb','ccc','bbb','aaa','aaa']
+dict=Counter(inp)
+values=sorted(dict.values(),reverse=True)
+second=values[1]
+for (key,val) in dict.items():
+    if val==second:
+        print(key)
+    
 4:
 list1=[10,15,20,25,30,35,40]
 list2=[25,40,35]
@@ -21,3 +30,13 @@ lst=ip.split()
 for i in lst[:]:
     if int(i)>int(0):
         print((i))
+6:
+lst=[0,10,[20,30],40,50,[60,70,80,90],[100,110,120]]
+fltlst=[]
+for i in lst:
+    if type(i) is list:
+        for it in i:
+            fltlst.append(it)
+    else :
+        fltlst.append(i)
+print(fltlst)
