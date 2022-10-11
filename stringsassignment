@@ -1,0 +1,22 @@
+1:
+inp=input("enter the string:")
+from collections import Counter
+dict=Counter(inp)
+import string
+ls=list(dict.keys())
+alpha= [letter for letter in string.ascii_lowercase]
+for i in alpha[:]:
+    if i not in ls:
+        print(i)
+        
+4:
+inp=input("enter the string:")
+inp1=inp.split(sep=',')
+unique=set(inp1)
+print(sorted(unique))
+
+5:
+inp=input("enter the string:")
+from collections import Counter
+inp=dict(Counter(inp))
+print(inp)
