@@ -20,3 +20,20 @@ inp=input("enter the string:")
 from collections import Counter
 inp=dict(Counter(inp))
 print(inp)
+6:
+inp=input("enter the string:")
+from collections import Counter
+dict=Counter(inp)
+print(dict)
+vals=sorted(dict.keys())
+min=1
+for k,v in dict.items():
+    if v <= min:
+        print(k)
+7:
+inp=input("enter the string:")
+from collections import Counter
+dict=Counter(inp)
+for k,v in dict.items():
+    if v%2 != 0:
+        print(k)
