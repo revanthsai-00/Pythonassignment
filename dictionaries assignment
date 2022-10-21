@@ -1,0 +1,8 @@
+4:from collections import Counter
+sent='Python is great and java is also great'
+sent=sent.split()
+sent=Counter(sent)
+for k,v in sent.items():
+    set(k)
+    print(k)
+    
