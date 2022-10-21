@@ -1,4 +1,19 @@
-4:from collections import Counter
+
+2)
+test_dict={'Gfg':4,'best':9}
+test_list=[8,2]
+nst={}
+for v,k in zip(test_dict.items(),test_list):
+    nst[k]=dict([v])
+print(nst)
+3)
+test_dict={'c':[3],'b':[12,10],'a':[19,4]}
+sortkey={}
+for k,v in sorted(test_dict.items()):
+    sortvals=sorted(test_dict[k])
+    print(k,sortvals)
+        
+4)from collections import Counter
 sent='Python is great and java is also great'
 sent=sent.split()
 sent=Counter(sent)
