@@ -35,3 +35,26 @@ for i in tu:
         ls.append(i)
 print(tuple(ls))
 (1, 5, 7, 10)
+
+5:
+def numb(lst):
+    sum=0
+    for i in lst:
+        sum=sum+i
+    return sum
+tp=(1,1,0,1,0,0,1)
+tp1=list(tp)
+tp1=tp1[::-1]
+print(tp1)
+ls=[]
+for i in range(0,len(tp1)):
+    if tp1[i]==1:
+        ls.append(pow(2,i))
+    else:
+        continue
+decnum=numb(ls)
+print(decnum)
+    
+    
+[1, 0, 0, 1, 0, 1, 1]
+105
