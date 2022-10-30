@@ -1,0 +1,19 @@
+1)
+ls1=[1,2,3]
+ls2=[4,5,6]
+ls3=[7,8,9]
+print(list(map(lambda x,y,z:x+y+z,ls1,ls2,ls3)))
+
+2)
+ls=[('red','pink'),('white','black'),('orange','green')]
+print(list(map(' '.join,ls)))
+
+3)
+ol=[6,5,3,9]
+nl=[0,1,7,7]
+print(list(map(lambda x,y:(x+y,x-y),ol,nl)))
+
+4)
+fibonacci = lambda number: number if number <= 1 else fibonacci(number - 1) + fibonacci(number - 2);
+listOfFibonacciNumbers = list(map(fibonacci, range(0, 5, 1)));
+print(listOfFibonacciNumbers);
