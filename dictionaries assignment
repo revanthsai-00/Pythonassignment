@@ -1,4 +1,27 @@
-
+1)def checkPattern(string, pattern):
+	dic = {}
+	pattern_len = len(pattern)
+ 
+	for c in pattern:
+		dic[c] = 1
+		print(c)
+ 
+	onlyPatternChar = ''
+	for c in string:
+		if c in dic:
+			# Empty string
+			if len(onlyPatternChar) == 0:
+				onlyPatternChar += c
+				print(onlyPatternChar)
+			else:
+				if onlyPatternChar[-1] != c:
+					onlyPatternChar += c
+					print(onlyPatternChar)
+ 
+	return (True if onlyPatternChar == pattern else False)
+ 
+res=checkPattern('engineers rock', 'er')
+print(res)
 2)
 test_dict={'Gfg':4,'best':9}
 test_list=[8,2]
@@ -20,4 +43,24 @@ sent=Counter(sent)
 for k,v in sent.items():
     set(k)
     print(k)
-    
+6)
+   from collections import Counter
+  
+def maxAnagramSize(input):
+  
+    input = input.split(" ")
+  
+
+    for i in range(0,len(input)):
+         input[i]=''.join(sorted(input[i]))
+         print(input[i])
+  
+    freqDict = Counter(input)
+  
+
+    print (max(freqDict.values()))
+  
+
+input = 'ant magenta magnate tan gnamate'
+res=maxAnagramSize(input)
+print(res) 
