@@ -8,7 +8,11 @@ alpha= [letter for letter in string.ascii_lowercase]
 for i in alpha[:]:
     if i not in ls:
         print(i)
-        
+2:
+st='abc'
+n=len(st)
+print(n*(n+1)/2)
+
 3:
 alpha=26
 def uplowsort(data):
